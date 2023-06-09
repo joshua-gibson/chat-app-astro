@@ -1,11 +1,26 @@
+---
+import TitleBar from "./PhoneDemo/TitleBar.astro";
+import SpeechBubble from "./PhoneDemo/SpeechBubble.astro";
+import PurchaseSpeech from "./PhoneDemo/PurchaseSpeech.astro";
+import ThumbnailImages from "./PhoneDemo/ThumbnailImages.astro";
+import MessageInput from "./PhoneDemo/MessageInput.astro";
+---
+
 <div class="phone-demo">
-    <p>
-        Samuel Green Available to Walk That sounds great. I’d be happy with
-        that. Could you send over some pictures of your dog, please? Here are a
-        few pictures. She’s a happy girl! Can you make it? She looks so happy!
-        The time we discussed works. How long shall I take her out for? 30
-        minute walk $29 1 hour walk $49 Type a message…
-    </p>
+    <TitleBar />
+    <SpeechBubble>That sounds great. I’d be happy with that.</SpeechBubble>
+    <SpeechBubble>
+        Could you send over some pictures of your dog, please?
+    </SpeechBubble>
+    <ThumbnailImages />
+    <SpeechBubble>Here are a few pictures. She’s a happy girl!</SpeechBubble>
+    <SpeechBubble>
+        Can you make it? She looks so happy! The time we discussed works. How
+        long shall I take her out for?
+    </SpeechBubble>
+    <PurchaseSpeech>30 minute walk $29</PurchaseSpeech>
+    <PurchaseSpeech>1 hour walk $49</PurchaseSpeech>
+    <MessageInput>Type a message…</MessageInput>
 </div>
 
 <style>
