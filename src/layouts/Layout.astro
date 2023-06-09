@@ -45,7 +45,12 @@ const { title } = Astro.props;
 		left: -200px;
 		width: 750px;
 		height: 85%;
-		background-color: blue;
+		background: rgb(131, 58, 180);
+		background: linear-gradient(
+			40deg,
+			hsl(264, 100%, 61%) 30%,
+			hsl(293, 100%, 63%)
+		);
 		z-index: -1;
 	}
 
@@ -55,7 +60,7 @@ const { title } = Astro.props;
 		right: -200px;
 		width: 750px;
 		height: 85%;
-		background-color: green;
+		background-color: hsl(270, 25%, 97%);
 		border-top-left-radius: 50%;
 		border-top-right-radius: 50%;
 		z-index: -1;
