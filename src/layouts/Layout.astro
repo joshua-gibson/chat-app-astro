@@ -17,12 +17,40 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+		<div class="left-drip"></div>
+
 		<slot />
+
+		<div class="right-drip"></div>
 	</body>
 </html>
 
 <style>
 	body {
-		background-color: lightslategray;
+		background-color: hsl(0, 0%, 100%);
+	}
+
+	.left-drip {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 33%;
+		height: 85%;
+		background-color: blue;
+		background-position: top left;
+		background-size: 100% 100%;
+		z-index: -1;
+	}
+
+	.right-drip {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		width: 33%;
+		height: 85%;
+		background-color: green;
+		background-position: top left;
+		background-size: 100% 100%;
+		z-index: -1;
 	}
 </style>
